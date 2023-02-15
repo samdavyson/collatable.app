@@ -675,6 +675,22 @@ iframe {
 	color: #fff;
 }
 
+.navbar-fixed-top.opaque #logo-fixed {
+	display:none;
+}
+
+.navbar-fixed-top.opaque #logo-opaque {
+	display:inline;
+}
+
+.navbar-fixed-top #logo-opaque {
+	display:none;
+}
+
+.navbar-fixed-top #logo-fixed {
+	display:inline;
+}
+
 .navbar-fixed-top.opaque .navbar-nav > li{
 	display: inline-block;
 }
@@ -689,7 +705,7 @@ iframe {
 }
 
 .navbar-fixed-top.opaque .navbar-nav > li > a{
-	color:#071e55;
+	color:#80a2e8;
 }
 
 .navbar-fixed-top .navbar-nav > li > a:hover{
@@ -701,7 +717,7 @@ iframe {
 }
 
 .navbar-fixed-top.opaque .navbar-nav .current a {
-    color:#e52f37!important;
+    color:#ffffff!important;
      -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -1114,7 +1130,7 @@ select.grey-input:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .partners img.partners {
     opacity: 0.4;
-    margin: 10px 15px;
+    margin: 10px 5px;
     max-height: 55px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -2764,7 +2780,7 @@ ul.benefits.white li i {
 @media (max-width: 991px) {
 
 	.navbar-brand {
-	    color: #e52f37;
+	    color: #071e55;
 	}
 
 	.navbar-fixed-top {

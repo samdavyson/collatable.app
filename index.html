@@ -2,6 +2,15 @@
 <html lang="zxx">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XDY7VREPHJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XDY7VREPHJ');
+</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Epic-Themes">
@@ -26,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- Font Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/logo.png">
     
 </head>
 
@@ -42,7 +51,10 @@
             <div class="container">
 
                     <!--begin logo -->
-                    <a class="navbar-brand" href="#">Collatable</a>
+                    <a class="navbar-brand" href="#">
+                        <img id="logo-fixed" src="images/logo.png" width="36px" height="36px" style="margin-top:-5px;margin-right:5px" />
+                        <img id="logo-opaque" src="images/logobw.png" width="36px" height="36px" style="margin-top:-5px;margin-right:5px" />
+                        Collatable</a>
                     <!--end logo -->
 
                     <!--begin navbar-toggler -->
@@ -56,24 +68,16 @@
                         
                         <!--begin navbar-nav -->
                         <ul class="navbar-nav ml-auto">
-<!---
+
                             <li><a href="#home">Home</a></li>
 
-                            <li><a href="#about">About</a></li>
-
-                            <li><a href="#team">Team</a></li>
-
-                            <li><a href="#testimonials">Testimonials</a></li>
-
-                            <li><a href="#portfolio">Work</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li> 
 
                             <li><a href="#features">Features</a></li> 
 
                             <li><a href="#pricing">Pricing</a></li>
 
-                            <li><a href="#blog">Blog</a></li>-->
-
-                            <li class="discover-link"><a href="#contact" class="discover-btn">Sign Up</a></li>
+                            <li class="discover-link"><a href="https://airtable.com/shrAZ9Lpp4Kw3q271" class="discover-btn" onClick="window.location.href = 'https://airtable.com/shrAZ9Lpp4Kw3q271';">Sign Up</a></li>
 
                         </ul>
                         <!--end navbar-nav -->
@@ -142,10 +146,10 @@
                 <!--begin col-sm-12-->
                 <div class="col-md-10 mx-auto text-center partners">
                     <h5 class="partners-title">Used by teams in companies you love</h5>
-                    <img src="http://placehold.it/250x128" class="partners" alt="image">
-                    <img src="http://placehold.it/250x128" class="partners" alt="image">
-                    <img src="http://placehold.it/250x128" class="partners" alt="image">
-                    <img src="http://placehold.it/250x128" class="partners" alt="image">
+                    <img src="images/partners1.png" class="partners" alt="Google">
+                    <img src="images/partners2.png" class="partners" alt="Sentinental One">
+                    <img src="images/partners3.png" class="partners" alt="Zeplin">
+                    <img src="images/partners4.png" class="partners" alt="Aircall">
                 </div>
                 <!--end col-sm-12-->
                 
@@ -347,7 +351,7 @@
     <!--end section-white-->
 
     <!--begin section-grey -->
-    <section class="section-grey">
+    <section class="section-grey" id="how-it-works">
         
         <!--begin container-->
         <div class="container" style="padding-bottom:100px">
@@ -389,12 +393,12 @@
 
                     <h3>Connect your data from one of 50+ integrated sources</h3>
 
-                    <p></p>
+                    <p>Data connections are built natively into Collatable, simply login and your data is connected.</p>
                     
                     <ul class="benefits">
-                        <li><i class="fas fa-check"></i> Integrated automatic <b>two-way data sync</b> netsum eos qui ratione sequi.</li>
+                        <li><i class="fas fa-check"></i> Integrated automatic <b>two-way data sync</b>.</li>
                         <li><i class="fas fa-check"></i> Upload new data directly to Collatable.</li>
-                        <li><i class="fas fa-check"></i> Easy to manage your business data in our manageament console.</li>
+                        <li><i class="fas fa-check"></i> Easy to manage your business data in our console.</li>
                     </ul>
 
                 </div>
@@ -419,12 +423,12 @@
 
                     <h3>Assign the data to those in your team who know best</h3>
 
-                    <p>The individuals will be tasked with updating the data.</p>
+                    <p>The individuals you assign will be tasked with updating the data.</p>
                     
                     <ul class="benefits">
-                        <li><i class="fas fa-check"></i> <b>Quias netus magni</b> netsum eos qui ratione sequi.</li>
-                        <li><i class="fas fa-check"></i> Venis ratione sequi netus <b>enim quia tempor</b> magni.</li>
-                        <li><i class="fas fa-check"></i> Enim <b>ipsam netus</b> voluptatem quia voluptas.</li>
+                        <li><i class="fas fa-check"></i> Assign data set owners.</li>
+                        <li><i class="fas fa-check"></i> Choose from built in review frequencies.</li>
+                        <li><i class="fas fa-check"></i> Customize the schedule to fit your process.</li>
                     </ul>
 
 
@@ -448,7 +452,7 @@
         <!--end container-->
 
          <!--begin container-->
-         <div class="container">
+         <div class="container" style="padding-bottom:100px">
 
             <!--begin row-->
             <div class="row align-items-center">
@@ -471,13 +475,53 @@
                     <p>Divide ownership on a record by record, field by field level</p>
                     
                     <ul class="benefits">
-                        <li><i class="fas fa-check"></i> <b>Quias netus magni</b> netsum eos qui ratione sequi.</li>
-                        <li><i class="fas fa-check"></i> Venis ratione sequi netus <b>enim quia tempor</b> magni.</li>
-                        <li><i class="fas fa-check"></i> Enim <b>ipsam netus</b> voluptatem quia voluptas.</li>
+                        <li><i class="fas fa-check"></i> Split large datasets across multiple team members.</li>
+                        <li><i class="fas fa-check"></i> Results will be automatically merged.</li>
+                        <li><i class="fas fa-check"></i> Vary review frequency by business criticality.</li>
                     </ul>
 
                 </div>
                 <!--end col-md-6-->
+            
+            </div>
+            <!--end row-->
+    
+        </div>
+        <!--end container-->
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row align-items-center">
+        
+                
+                <!--begin col-md-6-->
+                <div class="col-md-6">
+
+                    <h3>Collatable does the rest</h3>
+
+                    <p>The platform gets and collates the necessary data changes.</p>
+                    
+                    <ul class="benefits">
+                        <li><i class="fas fa-check"></i> Automatic notification to data owners.</li>
+                        <li><i class="fas fa-check"></i> Easy and flexible update process.</li>
+                        <li><i class="fas fa-check"></i> Automations and API integrations can be configured.</li>
+                    </ul>
+
+
+                </div>
+                <!--end col-md-6-->
+
+                <!--begin col-md-6-->
+                <div class="col-md-6 padding-bottom-30 wow slideInRight" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: slideInRight;">
+
+                    <video class="width-100 bottom-margins-images" autoplay muted loop>
+                        <source src="videos/email.mp4" type="video/mp4">
+                      </video>
+                    
+                </div>
+                <!--end col-sm-6-->
             
             </div>
             <!--end row-->
@@ -573,9 +617,9 @@
                 <!--begin col-md-12-->
                 <div class="col-md-12 text-center padding-bottom-10">
 
-                    <h2 class="section-title">Amazing Features</h2>
+                    <h2 class="section-title">Collatable Features</h2>
 
-                    <p class="section-subtitle">Quis autem velis ets reprehender net etid quiste voluptate.</p>
+                    <p class="section-subtitle">Collatable is fully featured with everything you need to control your data.</p>
 
                 </div>
                 <!--end col-md-12 -->
@@ -591,13 +635,13 @@
 
                     <div class="feature-box light-green">
 
-                        <i class="fas fa-tools"></i>
+                        <i class="fas fa-comments"></i>
 
                         <div class="feature-box-text">
 
-                            <h4>Support 24/7</h4>
+                            <h4>Slack + Teams Integration</h4>
 
-                            <p>Utise wisi enim nets venias, quis tation ullamcorper nets lobotis nisle consequat.</p>
+                            <p>Send requests in whichever way your team prefers to receive them.</p>
 
                         </div>
 
@@ -611,13 +655,13 @@
 
                     <div class="feature-box light-blue">
 
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-paperclip"></i>
 
                         <div class="feature-box-text">
 
-                            <h4>User Friendly</h4>
+                            <h4>Email Attachments</h4>
 
-                            <p>Utise wisi enim nets venias, quis tation ullamcorper nets lobotis nisle consequat.</p>
+                            <p>Optionally email datasets out as attachments for editing by the data owner.</p>
 
                         </div>
 
@@ -635,9 +679,9 @@
 
                         <div class="feature-box-text">
 
-                            <h4>Notifications</h4>
+                            <h4>Reminders</h4>
 
-                            <p>Utise wisi enim nets venias, quis tation ullamcorper nets lobotis nisle consequat.</p>
+                            <p>Missed data updates will have automatic reminders to ensure data is corrected.</p>
 
 
                         </div>
@@ -658,13 +702,13 @@
 
                     <div class="feature-box dark-blue">
 
-                        <i class="fas fa-gift"></i>
+                        <i class="fas fa-table"></i>
 
                         <div class="feature-box-text">
 
-                            <h4>Accesibility</h4>
+                            <h4>Portals</h4>
 
-                            <p>Utise wisi enim nets venias, quis tation ullamcorper nets lobotis nisle consequat.</p>
+                            <p>Automatic portals for data owners will all outstanding data tasks.</p>
 
                         </div>
 
@@ -678,13 +722,13 @@
 
                     <div class="feature-box light-red">
 
-                        <i class="fas fa-piggy-bank"></i>
+                        <i class="fas fa-arrow-up"></i>
 
                         <div class="feature-box-text">
 
-                            <h4>Cost Control</h4>
+                            <h4>Bulk Operations</h4>
 
-                            <p>Utise wisi enim nets venias, quis tation ullamcorper nets lobotis nisle consequat.</p>
+                            <p>Correct large quantities of data without lots of manual effort.</p>
 
                         </div>
 
@@ -699,14 +743,14 @@
                     <div class="feature-box dark-green">
 
 
-                        <i class="far fa-comments"></i>
+                        <i class="far fa-star"></i>
 
 
                         <div class="feature-box-text">
 
-                            <h4>Chat With Friends</h4>
+                            <h4>Friendly Support</h4>
 
-                            <p>Utise wisi enim nets venias, quis tation ullamcorper nets lobotis nisle consequat.</p>
+                            <p>We're always here to help you and your team succeed.</p>
 
                         </div>
 
@@ -750,17 +794,17 @@
 
                         <ul class="pricing-list">
 
-                            <li class="price-title">MONTHLY</li>
+                            <li class="price-title">STARTER</li>
 
                             <li class="price-value">$19</li>
 
                             <li class="price-subtitle">Per Month</li>
 
-                            <li class="price-tag"><a href="#">GET STARTED</a></li>
+                            <li class="price-tag"><a href="https://airtable.com/shrAZ9Lpp4Kw3q271">GET STARTED</a></li>
 
-                            <li class="price-text">First two weeks free.</li>
+                            <li class="price-text">14 day free trial</li>
                             
-                            <li class="price-text">Amazing freatures.</li>
+                            <li class="price-text">5 active data sets</li>
 
                         </ul>
 
@@ -776,19 +820,19 @@
 
                         <ul class="pricing-list">
 
-                            <li class="price-title">ANNUALY</li>
+                            <li class="price-title">BUSINESS</li>
 
-                            <li class="price-value">$29</li>
+                            <li class="price-value">$99</li>
 
-                            <li class="price-subtitle">Per Year</li>
+                            <li class="price-subtitle">Per Month</li>
 
-                            <li class="price-tag"><a href="#">GET STARTED</a></li>
+                            <li class="price-tag"><a href="https://airtable.com/shrAZ9Lpp4Kw3q271">GET STARTED</a></li>
 
-                            <li class="price-text">First two weeks free.</li>
+                            <li class="price-text">14 day free trial</li>
                             
-                            <li class="price-text">Save 45% with this plan</li>
+                            <li class="price-text">100 active data sets</li>
 
-                            <li class="price-text">Amazing freatures.</li>
+                            <li class="price-text">24 x 7 Support</li>
 
                         </ul>
 
@@ -820,7 +864,7 @@
 
                     <h2 class="section-title">Frequently Asked Questions</h2>
 
-                    <p class="section-subtitle">Things you might be now wondering... with helpful answers.</p>
+                    <p class="section-subtitle">Things you might be wondering... with helpful answers.</p>
 
                 </div>
                 <!--end col-md-12 -->
@@ -858,17 +902,17 @@
 
                     <div class="faq-box">
 
-                        <h5>Nibh sit amet aliquam commodo?</h5>
+                        <h5>Does Collatable work with data in SQL databases?</h5>
 
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+                        <p>Yes, absolutely! Collatable can connect to over 50 data sources including SQL databases. The data will be kept up to date and pushed back to the SQL database after review.</p>
 
                     </div>
 
                     <div class="faq-box">
 
-                        <h5>Elementum curabitur vitae?</h5>
+                        <h5>What if my team don't update the records?</h5>
 
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+                        <p>Collatable has built in reporting and analytics to surface any missing updates that are pending from your team. It also automatically reminds those required to provide updates.</p>
 
                     </div>
 
